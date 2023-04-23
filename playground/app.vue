@@ -31,5 +31,5 @@ import { onMounted, ref } from "#imports";
 
 const isReady = ref<boolean>(false);
 
-onMounted(() => isReady.value = true);
+onMounted(() => (isReady.value = true));
 </script>
