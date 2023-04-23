@@ -1,0 +1,24 @@
+#!/bin/bash
+cd ./scripts
+
+if [ "$1" == "bootstrap" ]
+    then 
+        ./bootstrap.sh && ./start.sh
+fi
+
+if [ "$1" == "start" ]
+    then
+        ./start.sh
+fi
+
+if [ "$1" == "stop" ]
+    then 
+        ./stop.sh
+fi
+
+if [ "$1" == "yarn" ]
+    then 
+        ./app.sh $*
+fi
+
+cd ../
